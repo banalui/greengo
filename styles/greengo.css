@@ -9,36 +9,39 @@
 
 .logolink{
 	margin-top: 5px;
+	margin-left: auto;
 	height: 60px;
 	text-align: center;
-	width: 2560px;
+	/*width: 2560px;*/
+	width: 1440px;
 }
 
 .mainwrapper{
 	overflow-x:auto; 
 	overflow-y:hidden;
-	width: 2560px;
-	height: 500px;
+	/*width: 2560px;*/
+	width: 1440px;
+	height: 280px;
 }
 
 .upperpartheading1, .upperpartheading2, .upperpartheading3, .upperpartheading4{
 	display: inline-block;
 	border-right: 3px solid #C8C8C8;
-	width: 634px;
+	width: 354px;
 	height: 40px;
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 .lowerpartcontent1, .lowerpartcontent2, .lowerpartcontent3, .lowerpartcontent4{
 	display: inline-block;
 	height: 350px;
-	width: 634px;
+	width: 350px;
 	border-right: 3px solid white;
 }
 
 .upperpartheadingpre1, .upperpartheadingpre2, .upperpartheadingpre3, .upperpartheadingpre4{
 	font-family: 'Work Sans', sans-serif;
-	font-size: 42px;
+	font-size: 30px;
 	font-weight: 200;
 	color: #989898;
 	text-align: center;
@@ -55,17 +58,17 @@
 	font-family: 'Lato', sans-serif;
 	font-size: 15px;
 	color: #989898;
-	letter-spacing: 2px;
-	line-height: 20px;
+	/*letter-spacing: 2px;
+	line-height: 20px;*/
 }
 
 .lowercontentp1, .lowercontentp2, .lowercontentp3{
-	margin-right: 220px;
-	margin-top: 150px;
+	margin-right: 80px;
+	margin-top: 60px;
 }
 
 .lowercontentp4{
-	margin: 70px;
+	margin: 30px;
 }
 
 .mainborder{
@@ -114,3 +117,35 @@
 	float: right;
 }
 
+.image4{
+	float: left;
+}
+
+.image5{
+	float: left;
+}
+
+.img1{
+	height: 270px;
+	width: 720px;
+}
+.img2{
+	height: 270px;
+	width: 360px;
+}
+.img3{
+	height: 540px;
+	width: 360px;
+}
+.img4{
+	height: 270px;
+	width: 360px;
+}
+.img5{
+	height: 270px;
+	width: 720px;
+}
+
+.imgwrapper{
+	line-height: 0;
+}
