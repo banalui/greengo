@@ -20,21 +20,36 @@
 	overflow-x:auto; 
 	overflow-y:hidden;
 	width: 1200px;
-	height: 360px;
+	height: 110px;
 	margin: auto;
 }
+
+.upperpartheading1, .upperpartheading2, .upperpartheading3, .upperpartheading4, .upperpartheading5{
+	display: inline-block;
+	width: 240px;
+	height: 110px;
+	margin-top: 30px;
+	position: absolute;
+	padding-left: 30px;
+}
+
 
 .upperpartheading2{
 	margin-left: 300px;
 }
 
 .upperpartheading3{
-	margin-left: 600px;
+	margin-left: 540px;
 }
 
 .upperpartheading4{
-	margin-left: 900px;
+	margin-left: 820px;
 }
+
+.upperpartheading5{
+	margin-left: 1080px;
+}
+
 /*
 .upperpartheading1{
 	background-color: orange;
@@ -49,16 +64,8 @@
 	background-color: red;
 }
 */
-.upperpartheading1, .upperpartheading2, .upperpartheading3, .upperpartheading4{
-	display: inline-block;
-	width: 300px;
-	height: 360px;
-	margin-top: 100px;
-	position: absolute;
-	padding-left: 30px;
-}
 
-.loginbutton {
+.loginbutton, .searchbutton {
     background-color: white;
     color: black;
     border: 2px solid #008CBA;
@@ -66,9 +73,14 @@
     height: 40px;
 }
 
-.loginbutton:hover {
+.loginbutton:hover, .searchbutton:hover {
     background-color: #008CBA;
     color: white;
+}
+
+.searchbutton{
+	display: inline-block;
+	width: 90px;
 }
 
 .group{
@@ -80,18 +92,17 @@ form{
 	height: 200px;
 }
 
-input{
-	font-size: 22px;
+.animatedinput{
+	font-size: 18px;
 	padding: 10px 10px 10px 5px;
 	display: block;
-	width: 350px;
+	width: 200px;
 	border: none;
-	/*border-bottom: 1px solid #757575;*/
 	border-bottom: 1px solid white;
 
 }
 
-input:focus {
+.animatedinput:focus {
 	outline: none;
 }
 
@@ -104,20 +115,25 @@ label{
 	top: 10px;
 	transition: 0.2s ease all;
 	font-family: 'Work Sans', sans-serif;
-	font-size: 25px;
+	font-size: 16px;
 	/*padding-left: 70px;*/
 }
 
-input:focus ~ label, input:valid ~ label{
+.animatedinput:focus ~ label, .animatedinput:valid ~ label{
 	top: -20px;
-	font-size: 20px;
-	color: #5264AE;
+	font-size: 18px;
+	/*color: #5264AE;*/
+	color: white;
 }
 
 .bar{
 	position: relative;
 	display: block;
-	width: 250px;
+	width: 200px;
+}
+
+#wherebar{
+	width: 260px;
 }
 
 .bar:before, .bar:after{
@@ -138,7 +154,7 @@ input:focus ~ label, input:valid ~ label{
 	right: 50%;
 }
 
-input:focus ~ .bar:before, input:focus ~ .bar:after{
+.animatedinput:focus ~ .bar:before, .animatedinput:focus ~ .bar:after{
 	width: 50%;
 }
 
@@ -152,7 +168,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after{
 	opacity: 0.5;
 }
 
-input:focus ~ .highlight{
+.animatedinput:focus ~ .highlight{
 	animation: inputHighlighter 0.3s ease;
 }
 
@@ -165,6 +181,46 @@ input:focus ~ .highlight{
 		width: 0;
 		background: transparent;
 	}
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .mainborder{

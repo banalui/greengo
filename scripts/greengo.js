@@ -9,5 +9,6 @@ $(document).ready(function(){
 			$(this).removeClass("used");
 		}
 	});
-
+	$('.dropdown-toggle').dropdown()
 });
+

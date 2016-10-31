@@ -4,6 +4,16 @@
 		<title>GreenGo Homepage</title>
 		<script type="text/javascript" src="scripts/jquery-3.1.1.min.js"></script>
 		<script type="text/javascript" src="scripts/greengo.js"></script>
+		<script>
+  			$( function() {
+    			$( "#datepickercheckin" ).datepicker();
+    			$( "#datepickercheckout" ).datepicker();
+  			} );
+  		</script>
+  		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  		<link rel="stylesheet" href="https:/resources/demos/style.css">
+  		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<link 						   href="https://fonts.googleapis.com/css?family=Taviraj|Work+Sans:900" rel="stylesheet">
 		<link 						   href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link   type="text/css"        href="styles/reset.css"                                              rel="stylesheet">
@@ -11,34 +21,67 @@
 
 	</head>
 	<body>
+		<div class="logolink" ><a href="./index.html"><img src="images/greengo-logo.png"/></a></div>
 		<div class="container">
-			<div class="logolink" ><a href="./index.html"><img src="images/greengo-logo.png"/></a></div>
 			<div class="mainwrapper">
-				<div class="upperpartheading1"><!--
-					--><form><div class="group"><input type="text" required><span class="highlighted"></span><span class="bar"></span><label>E M A I L</label></div><!--
-					   --><div class="group"><input type="password" required><span class="highlighted"></span><span class="bar"></span><label>P A S S W O R D</label></div>
-					</form><!--
-					--><button class="loginbutton" type="button">LOGIN</button><!--
-				--></div>
+				<div class="upperpartheading1">
+					<form>
+						<div class="group">
+							<input class="animatedinput" type="text" required>
+							<span class="highlighted"></span>
+							<span class="bar" id="wherebar"></span>
+							<label>
+								<pre>W  H  E  R  E  ?</pre>
+							</label>
+						</div>
+					</form>
+				</div>
 				<div class="upperpartheading2">
-					<form><div class="group"><input type="text" required><span class="highlighted"></span><span class="bar"></span><label>W H E R E ?</label></div>
+					<form>
+						<div class="group">
+							<input class="animatedinput" type="text" id="datepickercheckin" required>
+							<span class="highlighted"></span>
+							<span class="bar"></span>
+							<label>
+								<pre>C  H  E  C  K  I  N</pre>
+							</label>
+						</div>
 					</form>
 				</div>
 				<div class="upperpartheading3">
-					<form><div class="group"><input type="text" required><span class="highlighted"></span><span class="bar"></span><label>W H E N ?</label></div>
+					<form>
+						<div class="group">
+					    	<input class="animatedinput" type="text" id="datepickercheckout" required>
+					    	<span class="highlighted"></span>
+					    	<span class="bar"></span>
+					    	<label>
+					    		<pre>C  H  E  C  K  O  U  T</pre>
+					    	</label>
+					    </div>
 					</form>
 				</div>
 				<div class="upperpartheading4">
-					<form><div class="group"><input type="text" required><span class="highlighted"></span><span class="bar"></span><label><pre>H O W    M A N Y ?</pre></label></div>
+					<form>
+						<div class="group">
+							<input class="animatedinput" type="text" required>
+							<span class="highlighted"></span>
+							<span class="bar"></span>
+							<label>
+								<pre>H  O  W    M  A  N  Y  ?</pre>
+							</label>
+						</div>
 					</form>
+				</div>
+				<div class="upperpartheading5">
+					<button class="searchbutton" type="button">SEARCH</button>
 				</div>
 			</div>
 			<div class="mainborder"></div>
-			<a class="image1" href="./index.html"><img src="images/nature2.jpg" height="400" width="600"></a><!--
-		 --><a class="image2" href="./index.html"><img src="images/nature4.jpg" height="400" width="300"></a><!--
-		 --><a class="image3" href="./index.html"><img src="images/nature1.jpg" height="800" width="300"></a><!--
-		 --><a class="image4" href="./index.html"><img src="images/nature5.jpg" height="400" width="300"></a><!--
-		 --><a class="image5" href="./index.html"><img src="images/nature3.jpg" height="400" width="600"></a>
+			<a class="image1" href="./index.html"><img src="images/nature1.jpg" height="400" width="600"></a><!--
+		 --><a class="image2" href="./index.html"><img src="images/nature2.jpg" height="400" width="300"></a><!--
+		 --><a class="image3" href="./index.html"><img src="images/nature3.jpg" height="800" width="300"></a><!--
+		 --><a class="image4" href="./index.html"><img src="images/nature4.jpg" height="400" width="300"></a><!--
+		 --><a class="image5" href="./index.html"><img src="images/nature5.jpg" height="400" width="600"></a>
 		</div>
 	</body>
 </html>
