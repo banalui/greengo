@@ -12,14 +12,21 @@
 
 .logolink{
 	margin-top: 5px;
+	margin-left: auto;
 	height: 60px;
 	text-align: center;
+<<<<<<< HEAD
 	width: 100%;
+=======
+	/*width: 2560px;*/
+	width: 1425px;
+>>>>>>> 16b3e8183acc1b31a3eab7a85f09ebda6bdf7ffd
 }
 
 .mainwrapper{
 	overflow-x:auto; 
 	overflow-y:hidden;
+<<<<<<< HEAD
 	width: 1200px;
 	height: 360px;
 	margin: auto;
@@ -47,6 +54,11 @@
 
 .upperpartheading3{
 	background-color: yellow;
+=======
+	/*width: 2560px;*/
+	width: 1425px;
+	height: 280px;
+>>>>>>> 16b3e8183acc1b31a3eab7a85f09ebda6bdf7ffd
 }
 
 .upperpartheading4{
@@ -55,6 +67,7 @@
 */
 .upperpartheading1, .upperpartheading2, .upperpartheading3, .upperpartheading4{
 	display: inline-block;
+<<<<<<< HEAD
 	width: 300px;
 	height: 360px;
 	margin-top: 100px;
@@ -73,6 +86,27 @@
 .loginbutton:hover {
     background-color: #008CBA;
     color: white;
+=======
+	border-right: 3px solid #C8C8C8;
+	width: 350px;
+	height: 40px;
+	margin-top: 50px;
+}
+
+.lowerpartcontent1, .lowerpartcontent2, .lowerpartcontent3, .lowerpartcontent4{
+	display: inline-block;
+	height: 350px;
+	width: 350px;
+	border-right: 3px solid white;
+}
+
+.upperpartheadingpre1, .upperpartheadingpre2, .upperpartheadingpre3, .upperpartheadingpre4{
+	font-family: 'Work Sans', sans-serif;
+	font-size: 30px;
+	font-weight: 200;
+	color: #989898;
+	text-align: center;
+>>>>>>> 16b3e8183acc1b31a3eab7a85f09ebda6bdf7ffd
 }
 
 .group{
@@ -80,6 +114,7 @@
 	margin-bottom: 45px;
 }
 
+<<<<<<< HEAD
 form{
 	height: 200px;
 }
@@ -97,6 +132,24 @@ input{
 
 input:focus {
 	outline: none;
+=======
+.lowercontentp1, .lowercontentp2, .lowercontentp3, .lowercontentp4{
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	color: #989898;
+	/*letter-spacing: 2px;
+	line-height: 20px;*/
+}
+
+.lowercontentp1, .lowercontentp2, .lowercontentp3{
+	margin-right: 100px;
+	margin-top: 60px;
+}
+
+.lowercontentp4{
+	margin: 30px;
+>>>>>>> 16b3e8183acc1b31a3eab7a85f09ebda6bdf7ffd
 }
 
 label{
@@ -179,12 +232,42 @@ input:focus ~ .highlight{
 .image1{
 	float: left;
 }
-
 .image2{
 	float: left;
 }
-
 .image3{
 	float: right;
 }
+.image4{
+	float: left;
+}
+.image5{
+	float: left;
+}
+.img1{
+	height: 270px;
+	width: 705px;
+}
+.img2{
+	height: 270px;
+	width: 360px;
+}
+.img3{
+	height: 540px;
+	width: 360px;
+}
+.img4{
+	height: 270px;
+	width: 360px;
+}
+.img5{
+	height: 270px;
+	width: 705px;
+}
 
+.imgwrapper{
+	min-width: 1425px;
+	line-height: 0;
+	overflow-x:hidden; 
+	overflow-y:hidden;
+}
