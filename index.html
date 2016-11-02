@@ -10,14 +10,12 @@
     			$( "#datepickercheckout" ).datepicker();
   			} );
   		</script>
-  		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  		<link rel="stylesheet" href="https:/resources/demos/style.css">
-  		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-		<link 						   href="https://fonts.googleapis.com/css?family=Taviraj|Work+Sans:900" rel="stylesheet">
-		<link 						   href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-		<link   type="text/css"        href="styles/reset.css"                                              rel="stylesheet">
-		<link   type="text/css"        href="styles/greengo.css"                                            rel="stylesheet">
+  		<link href="styles/jquery_ui.css" rel="stylesheet">
+  		<script src="scripts/jquery-1.12.4.js"></script>
+  		<script src="scripts/jquery_ui.js"></script>
+		<link href="styles/fonts.css"     rel="stylesheet">
+		<link href="styles/reset.css"     rel="stylesheet">
+		<link href="styles/greengo.css"   rel="stylesheet">
 
 	</head>
 	<body>
@@ -30,7 +28,7 @@
 							<input class="animatedinput" type="text" required>
 							<span class="highlighted"></span>
 							<span class="bar" id="wherebar"></span>
-							<label>
+							<label class="mainlabel">
 								<pre>W  H  E  R  E  ?</pre>
 							</label>
 						</div>
@@ -42,7 +40,7 @@
 							<input class="animatedinput" type="text" id="datepickercheckin" required>
 							<span class="highlighted"></span>
 							<span class="bar"></span>
-							<label>
+							<label class="mainlabel">
 								<pre>C  H  E  C  K  I  N</pre>
 							</label>
 						</div>
@@ -54,23 +52,23 @@
 					    	<input class="animatedinput" type="text" id="datepickercheckout" required>
 					    	<span class="highlighted"></span>
 					    	<span class="bar"></span>
-					    	<label>
+					    	<label class="mainlabel">
 					    		<pre>C  H  E  C  K  O  U  T</pre>
 					    	</label>
 					    </div>
 					</form>
 				</div>
-				<div class="upperpartheading4">
-					<form>
+				<div class="upperpartheading4"><pre onclick="myFunction()" class="mainlabel">H  O  W    M  A  N  Y  ?</pre>
+					<!--<form>
 						<div class="group">
-							<input class="animatedinput" type="text" required>
+							<input class="animatedinput" type="text" onclick="myFunction()" required>
 							<span class="highlighted"></span>
 							<span class="bar"></span>
-							<label>
+							<label class="mainlabel">
 								<pre>H  O  W    M  A  N  Y  ?</pre>
 							</label>
 						</div>
-					</form>
+					</form>-->
 				</div>
 				<div class="upperpartheading5">
 					<button class="searchbutton" type="button">SEARCH</button>

@@ -106,7 +106,7 @@ form{
 	outline: none;
 }
 
-label{
+.mainlabel{
 	color: #999;
 	font-weight: normal;
 	position: absolute;
